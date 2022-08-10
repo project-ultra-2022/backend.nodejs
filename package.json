@@ -4,6 +4,12 @@
     "typescript": "^4.7.4"
   },
   "scripts": {
-    "test": "ts-node app.ts"
+    "test": "ts-node app.ts",
+    "esteban": "ts-node Students/esteban/test.ts",
+    "nelson": "ts-node Students/nelson/test.ts",
+    "pipe": "ts-node Students/pipe/test.ts",
+    "santi": "ts-node Students/santi/test.ts",
+    "selena": "ts-node Students/selena/test.ts",
+    "daniel": "ts-node Students/daniel/test.ts"
   }
 }
