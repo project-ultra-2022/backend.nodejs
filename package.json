@@ -1,15 +1,17 @@
 {
-  "devDependencies": {
-    "ts-node": "^10.9.1",
-    "typescript": "^4.7.4"
-  },
   "scripts": {
-    "test": "ts-node app.ts",
+    "start": "ts-node src/app.js",
     "esteban": "ts-node Students/esteban/test.ts",
     "nelson": "ts-node Students/nelson/test.ts",
     "pipe": "ts-node Students/pipe/test.ts",
     "santi": "ts-node Students/santi/test.ts",
     "selena": "ts-node Students/selena/test.ts",
     "daniel": "ts-node Students/daniel/test.ts"
+  },
+  "dependencies": {
+    "express": "^4.18.1",
+    "joi": "^17.6.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.7.4"
   }
 }
