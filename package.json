@@ -1,12 +1,12 @@
 {
   "scripts": {
     "start": "ts-node src/app.js",
-    "esteban": "ts-node Students/esteban/test.ts",
-    "nelson": "ts-node Students/nelson/test.ts",
-    "pipe": "ts-node Students/pipe/test.ts",
-    "santi": "ts-node Students/santi/test.ts",
-    "selena": "ts-node Students/selena/test.ts",
-    "daniel": "ts-node Students/daniel/test.ts"
+    "esteban": "ts-node documentation/esteban/test.ts",
+    "nelson": "ts-node documentation/nelson/test.ts",
+    "pipe": "ts-node documentation/pipe/test.ts",
+    "santi": "ts-node documentation/santi/test.ts",
+    "selena": "ts-node documentation/selena/test.ts",
+    "daniel": "ts-node documentation/daniel/test.ts"
   },
   "dependencies": {
     "express": "^4.18.1",
