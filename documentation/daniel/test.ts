@@ -4,14 +4,27 @@ class DrawFigures {
     private size: number
     private boardSize: number
 
-    constructor (size: number){
-        this.size = size + 1
-        this.boardSize = this.size * 2
+    constructor (size: number) {
+        this.size = size
+        this.boardSize = 9
     }
 
     buildPyramid() {
-        for(let i: number = 0; i < this.size; i++) {
-            this.printNumber(i, this.boardSize - i)
+        if ( this.validate(this.size) ) {
+            for(let i: number = 0; i <= this.size; i++) {
+                this.printNumber(i, this.boardSize - i)
+            }
+        }
+    }
+
+    validate(num: number): boolean {
+        try {
+            if (num > 9) throw 'El número máximo es 9';
+            if (num < 1) throw 'El número mínimo es 1';
+            return true;
+        } catch (e: any) {
+            console.log(e)
+            return false;
         }
     }
 
@@ -19,10 +32,8 @@ class DrawFigures {
         let result: string = ''
         result = this.printBlankSpaces(blankSpaces)
         for(let i: number = 0; i < num; i++){
-            if(i !== 0) result += ' '
-            result += num
+            result += ' ' + num
         }
-        result += this.printBlankSpaces(blankSpaces)
         console.log(result)
     }
 
