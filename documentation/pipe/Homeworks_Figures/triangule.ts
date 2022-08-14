@@ -13,3 +13,4 @@ class triangulo {
 }
 const area = new triangulo(10, 10)
 console.log(area)
+ 
