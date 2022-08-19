@@ -1,7 +1,5 @@
 ## Tareas
 
-0. esPar(n) -> boolean: Dado un numero dice si ese numero es par o no.
-
 1. rangoHasta(n) -> Lista de números: dado un número "n", retorna la lista de números desde el 0 hasta el N incluído. Por ejemplo: rangoHasta(5) -> [0,1,2,3,4,5].
 
 2. rango(desde, hasta) -> lista de números: similar a rango, pero ahora se puede especificar el "desde". Ej: rango(5, 10) -> [5,6,7,8,9,10]. No hace falta validar que desde sea menor a hasta o tener rangos decrecientes.
