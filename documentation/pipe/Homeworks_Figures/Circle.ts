@@ -11,5 +11,5 @@ class circulo {
     return Math.round(this.radio * this.radio * Math.PI)
   }
 }
-const area = new circulo(10)
-console.log(area.radio)
+const areapipe = new circulo(10)
+console.log(areapipe.areaCirculo())

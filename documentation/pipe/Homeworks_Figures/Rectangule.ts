@@ -12,5 +12,5 @@ class rectangulo {
     return this.alto * this.ancho
   }
 }
-const area = new rectangulo(10, 10)
-console.log(area)
+const areapipe2 = new rectangulo(10, 10)
+console.log(areapipe2.areaRectangulo())

@@ -1,4 +1,4 @@
-class Rectangulo {
+class RectanguloSa {
   alto: number
   ancho: number
   constructor (alto: number, ancho: number) {
@@ -11,5 +11,5 @@ class Rectangulo {
   }
 }
 
-const cuadrado = new Rectangulo(10, 10)
-console.log(cuadrado.area())
+const figuraSa2 = new RectanguloSa(10, 10)
+console.log(figuraSa2.area())

@@ -1,4 +1,4 @@
-class Triangulo {
+class TrianguloSa {
   alto: number
   base: number
   constructor (alto: number, base: number) {
@@ -11,5 +11,5 @@ class Triangulo {
   }
 }
 
-const cuadrado = new Triangulo(10, 10)
+const cuadrado = new TrianguloSa(10, 10)
 console.log(cuadrado.area())

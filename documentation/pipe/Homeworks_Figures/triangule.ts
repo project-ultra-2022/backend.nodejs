@@ -12,5 +12,5 @@ class triangulo {
     return (this.alto * this.base) / 2
   }
 }
-const area = new triangulo(10, 10)
-console.log(area)
+const areapipe3 = new triangulo(10, 10)
+console.log(areapipe3.areaTriangulo())
