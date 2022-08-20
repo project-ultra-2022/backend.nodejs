@@ -2,29 +2,29 @@ console.log("Archivo de Daniel Valencia");
 
 function recursiveLoop(end: number): boolean {
   console.log("Entre ", end);
-  if (end >= 1) recursiveLoop(end - 1);
+  if (end < 100) recursiveLoop(end + 1);
   return true;
 }
 
-// recursiveLoop(100)
+// recursiveLoop(1)
 
 let fibonacciArray: Array<number> = [];
-
+//                  10            3             5
 function fibonacci(stop: number, num1: number, num2: number): Array<number> {
-  fibonacciArray.push(num1 + num2);
+  fibonacciArray.push(num1 + num2); // [1,2,3,5,8,13,21,34,55,89]
   if (fibonacciArray.length < stop) fibonacci(stop, num2, num1 + num2);
   return fibonacciArray;
 }
 
-// console.log(fibonacci(10, 0, 1))
+// console.log(fibonacci(15, 0, 1))
 
-function findCousinNumber(num: number, stop: number = 2): boolean {
-  if (num % stop == 0 && num != stop) return false
-  if (num != stop) return findCousinNumber(num, stop + 1);
+function findCousinNumber(num: number, indice: number = 2): boolean {
+  if (num % indice == 0 && num != indice) return false
+  if (num != indice) return findCousinNumber(num, indice + 1);
   return true
 }
 
-// console.log(findCousinNumber(9) ? "Si es primo" : "No es primo");
+// console.log(findCousinNumber(11) ? "Si es primo" : "No es primo");
 
 let cousinNumbers: Array<number> = []
 
@@ -35,7 +35,7 @@ function getCousinNumbers(amount: number, myNumber: number = 1): Array<number> {
   return cousinNumbers
 }
 
- console.log(getCousinNumbers(100));
+// console.log(getCousinNumbers(100));
 
 /*
 2	3	5	7	11	13	17	19
