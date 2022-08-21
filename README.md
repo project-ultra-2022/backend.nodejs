@@ -2,7 +2,7 @@
 TypeScript, Nodejs, Docker, SOLID
 
 ## Pensum
-1. Node y NPM
+1. Node, NPM, SCRUM
 2. Concepto API Rest
 3. Estructura API: Ruta, middleware, controller, bussiness, object input y object output
 4. Middlewares de control: Token y admin
@@ -12,6 +12,8 @@ TypeScript, Nodejs, Docker, SOLID
 8. Consumir SOAP con Backend
 9. Test unitarios con: Jest y Sinon Chai
 10. Docker
+11. DevOps
+12. PipeLines Azure y Jenkins
 
 ## Strike
 No
