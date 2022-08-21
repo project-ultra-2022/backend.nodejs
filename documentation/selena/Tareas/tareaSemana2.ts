@@ -1,30 +1,28 @@
-## Tareas
+// rangoHasta(n) -> Lista de números: dado un número "n", retorna la lista de números desde el 0 hasta el N incluído. Por ejemplo: rangoHasta(7) -> [0,1,2,3,4,5,6,7].
 
-1. rangoHasta(n) -> Lista de números: dado un número "n", retorna la lista de números desde el 0 hasta el N incluído. Por ejemplo: rangoHasta(7) -> [0,1,2,3,4,5,6,7].
-
-# ejercicio
-
-let arraynum: Array<number> = [];
+let arrayNum1: Array<number> = [];
 function rangoHasta(hastaDonde: number, indice: number = 0): Array<number> {
-arraynum.push(indice);
-if (hastaDonde > indice) rangoHasta(hastaDonde, indice + 1);
-return arraynum;
+  arrayNum1.push(indice);
+  if (hastaDonde > indice) rangoHasta(hastaDonde, indice + 1);
+  return arrayNum1;
 }
 
 console.log(rangoHasta(7));
 
-2. rango(desde, hasta) -> lista de números: similar a rango, pero ahora se puede especificar el "desde". Ej: rango(5, 10) -> [5,6,7,8,9,10]. No hace falta validar que desde sea menor a hasta o tener rangos decrecientes.
-   let arraynum: Array<number> = [];
-   function rangoHasta(
-   Desde: number,
-   Hasta: number,
-   indice: number = Desde
-   ): Array<number> {
-   arraynum.push(indice);
-   if (indice < Hasta) rangoHasta(Desde, Hasta, indice + 1);
-   return arraynum;
-   }
+// rango(desde, hasta) -> lista de números: similar a rango, pero ahora se puede especificar el "desde". Ej: rango(5, 10) -> [5,6,7,8,9,10]. No hace falta validar que desde sea menor a hasta o tener rangos decrecientes.
 
+let arrayNum2: Array<number> = [];
+function rangoHasta(
+  Desde: number,
+  Hasta: number,
+  indice: number = Desde
+): Array<number> {
+  arrayNum2.push(indice);
+  if (indice < Hasta) rangoHasta(Desde, Hasta, indice + 1);
+  return arrayNum2;
+}
+
+/*
 console.log(rangoHasta(5, 15)); 3. sumaHasta(n) -> numero. Retorna la suma de los numeros desde el 0 hasta el N. Por ejemplo.
 Ejemplos:
 sumaHasta(2) 1 + 2 = 3
@@ -44,3 +42,4 @@ sumaHasta(10) 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 10 = 55
    ordenar([3,6,-1]) -> [-1,3,6]
    ordenar([2,6,1,7]) -> [1,2,6,7]
    ordenar([2,-1,6,1,7,-5]) -> [-5,-1,1,2,6,7]
+*/
