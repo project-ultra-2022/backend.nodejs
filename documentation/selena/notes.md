@@ -42,3 +42,4 @@ class DrawFigures {
         this.size = size + 1
         this.boardSize = this.size * 2
     }
+
