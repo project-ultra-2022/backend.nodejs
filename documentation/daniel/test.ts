@@ -6,33 +6,36 @@ function recursiveLoop(end: number): boolean {
   return true;
 }
 
-// recursiveLoop(1)
+// recursiveLoop(1);
 
 let fibonacciArray: Array<number> = [];
-//                  10            3             5
+//                  5             3             5
 function fibonacci(stop: number, num1: number, num2: number): Array<number> {
-  fibonacciArray.push(num1 + num2); // [1,2,3,5,8,13,21,34,55,89]
+  fibonacciArray.push(num1 + num2); // [1,2,3,5,8]
+  //          5   <   5
   if (fibonacciArray.length < stop) fibonacci(stop, num2, num1 + num2);
   return fibonacciArray;
 }
 
-// console.log(fibonacci(15, 0, 1))
+// console.log(fibonacci(52, 0, 1));
 
 function findCousinNumber(num: number, indice: number = 2): boolean {
-  if (num % indice == 0 && num != indice) return false
+  if (num % indice == 0 && num != indice) return false;
   if (num != indice) return findCousinNumber(num, indice + 1);
-  return true
+  return true;
 }
 
 // console.log(findCousinNumber(11) ? "Si es primo" : "No es primo");
 
-let cousinNumbers: Array<number> = []
+let cousinNumbers: Array<number> = [];
 
 function getCousinNumbers(amount: number, myNumber: number = 1): Array<number> {
-  const num: number = myNumber + 1
-  if(findCousinNumber(num)) cousinNumbers.push(num)
-  if(amount > cousinNumbers.length) getCousinNumbers(amount, num)
-  return cousinNumbers
+  const num: number = myNumber + 1;
+  //                    11
+  if (findCousinNumber(num)) cousinNumbers.push(num); // [2,3,5,7,11]
+  //    10    >   10   NO                                 10    11
+  if (amount > cousinNumbers.length) getCousinNumbers(amount, num);
+  return cousinNumbers;
 }
 
 // console.log(getCousinNumbers(100));
@@ -61,4 +64,12 @@ function getCousinNumbers(amount: number, myNumber: number = 1): Array<number> {
 947	953	967	971	977	983	991	997
 */
 
+// rangoHasta(n) -> Lista de números: dado un número "n", retorna la lista de números desde el 0 hasta el N incluído. Por ejemplo: rangoHasta(7) -> [0,1,2,3,4,5,6,7]
+let response: Array<number> = [];
+function getRangoHasta(num: number, indice: number = 0): Array<number> {
+  response.push(indice);
+  if (num >= indice) getRangoHasta(num, indice + 1);
+  return response;
+}
 
+console.log(getRangoHasta(15));

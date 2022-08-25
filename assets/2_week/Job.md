@@ -45,7 +45,7 @@ npm install
 1. ESLint
 2. Git History Diff
 3. Peacock
-4. image.png
+4. Polacode
 5. Prettier - Code formatter
 6. Thunder Client
 7. Trailing Spaces

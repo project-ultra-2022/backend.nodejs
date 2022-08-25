@@ -7,20 +7,22 @@ function rangoHasta(hastaDonde: number, indice: number = 0): Array<number> {
   return arrayNum1;
 }
 
-console.log(rangoHasta(7));
+//console.log(rangoHasta(7));
 
 // rango(desde, hasta) -> lista de números: similar a rango, pero ahora se puede especificar el "desde". Ej: rango(5, 10) -> [5,6,7,8,9,10]. No hace falta validar que desde sea menor a hasta o tener rangos decrecientes.
 
 let arrayNum2: Array<number> = [];
-function rangoHasta(
+function rango(
   Desde: number,
   Hasta: number,
   indice: number = Desde
 ): Array<number> {
   arrayNum2.push(indice);
-  if (indice < Hasta) rangoHasta(Desde, Hasta, indice + 1);
+  if (indice < Hasta) rango(Desde, Hasta, indice + 1);
   return arrayNum2;
 }
+
+console.log(rango(5, 15));
 
 /*
 console.log(rangoHasta(5, 15)); 3. sumaHasta(n) -> numero. Retorna la suma de los numeros desde el 0 hasta el N. Por ejemplo.
