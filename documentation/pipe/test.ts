@@ -1,1 +1,1 @@
-console.log("Archivo de Pipe")
+console.log('Archivo de Pipe')

@@ -1,20 +1,23 @@
 import { Request, Response } from "express";
-import GeneralResponse from "../helpers/GeneralResponse";
 import TestOutput from "../outputObjets/TestOutput";
 import TestBusiness from "../business/TestBusiness";
+import { ApiResponse } from "../types";
 
 export default class TestController {
-  public async create(req: Request, res: Response) {
-    let code: number = 200;
-    let response: GeneralResponse<TestOutput> = new GeneralResponse<TestOutput>();
-
+  public async create(
+    req: Request,
+    res: Response
+  ): Promise<Response<any, Record<string, any>>> {
+    const response: ApiResponse<TestOutput> = {
+      statusCode: 200,
+      message: "Request successful",
+    };
     try {
-      response.setData(await new TestBusiness(req.body).create());
-      response.setMessage("Query accountCreate is succesfully");
-    } catch (error) {
-      code = error.statusCode || 500;
-      response.setMessage(error.message);
+      response.data = await new TestBusiness(req.body).create();
+    } catch (error: any) {
+      response.statusCode = 500;
+      response.message = error;
     }
-    return res.status(code).send(response);
+    return res.status(response.statusCode).send(response);
   }
 }
