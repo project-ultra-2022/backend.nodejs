@@ -18,13 +18,13 @@
    remover([1,2,3,4,5], 3) -> [1,2,4,5]
    remover([1,2,3,4,5,5,4,3,2,1], 3) -> [1,2,4,5,5,4,2,1]
 
-5. ordenar(numeros): Realizar una función que dada una lista de números retorne otra lista con los mismos números pero ordenados de menor a mayor. Pista: en una lista ordenada siempre se da que un elemento en la posición x es el mínimo de la sublista que sigue.
-   Ejemplos:
-   ordenar([3,6,-1]) -> [-1,3,6]
-   ordenar([2,6,1,7]) -> [1,2,6,7]
-   ordenar([2,-1,6,1,7,-5]) -> [-5,-1,1,2,6,7]
+   5. ordenar(numeros): Realizar una función que dada una lista de números retorne otra lista con los mismos números pero ordenados de menor a mayor. Pista: en una lista ordenada siempre se da que un elemento en la posición x es el mínimo de la sublista que sigue.
+      Ejemplos:
+      ordenar([3,6,-1]) -> [-1,3,6]
+      ordenar([2,6,1,7]) -> [1,2,6,7]
+      ordenar([2,-1,6,1,7,-5]) -> [-5,-1,1,2,6,7]
 
-6. (OPCIONAL) Ver el siguiente material:
+5. (OPCIONAL) Ver el siguiente material:
    https://www.youtube.com/watch?v=ZpY5KdGQvwI&t=3755s
 
 ## Nota: Por favor ejecutar los siguientes comandos antes de venir a clase
