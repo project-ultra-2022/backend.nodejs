@@ -65,11 +65,3 @@ function getCousinNumbers(amount: number, myNumber: number = 1): Array<number> {
 */
 
 // rangoHasta(n) -> Lista de números: dado un número "n", retorna la lista de números desde el 0 hasta el N incluído. Por ejemplo: rangoHasta(7) -> [0,1,2,3,4,5,6,7]
-let response: Array<number> = [];
-function getRangoHasta(num: number, indice: number = 0): Array<number> {
-  response.push(indice);
-  if (num >= indice) getRangoHasta(num, indice + 1);
-  return response;
-}
-
-console.log(getRangoHasta(15));
