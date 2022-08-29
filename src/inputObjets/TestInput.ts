@@ -1,5 +1,11 @@
-export default interface TestInput {
-  name: string;
-  lastname: string;
-  age: number;
+export default class TestInput {
+  private name: string;
+
+  constructor(name: string) {
+    this.name = name;
+  }
+
+  getName(): string {
+    return this.name;
+  }
 }

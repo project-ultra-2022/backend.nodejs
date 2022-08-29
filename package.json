@@ -1,39 +1,17 @@
 {
-  "name": "backend.nodejs",
-  "version": "1.0.0",
-  "description": "TypeScript, Nodejs, Docker, SOLID",
-  "main": "index.js",
   "scripts": {
-    "tsc": "tsc",
-    "start-classic": "node build/app.js",
-    "dev": "ts-node-dev src/app.ts",
-    "esteban": "ts-node-dev documentation/esteban/test.ts",
-    "nelson": "ts-node-dev documentation/nelson/test.ts",
-    "pipe": "ts-node-dev documentation/pipe/test.ts",
-    "santi": "ts-node-dev documentation/santi/test.ts",
-    "selena": "ts-node-dev documentation/selena/test.ts",
-    "daniel": "ts-node-dev documentation/daniel/test.ts",
-    "lint": "eslint . --fix"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/project-ultra-2022/backend.nodejs.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/project-ultra-2022/backend.nodejs/issues"
-  },
-  "homepage": "https://github.com/project-ultra-2022/backend.nodejs#readme",
-  "devDependencies": {
-    "@types/express": "^4.17.13",
-    "express": "^4.18.1",
-    "joi": "^17.6.0",
-    "ts-node-dev": "^2.0.0",
-    "typescript": "^4.7.4"
+    "start": "ts-node src/app.js",
+    "esteban": "ts-node documentation/esteban/test.ts",
+    "nelson": "ts-node documentation/nelson/test.ts",
+    "pipe": "ts-node documentation/pipe/test.ts",
+    "santi": "ts-node documentation/santi/test.ts",
+    "selena": "ts-node documentation/selena/test.ts",
+    "daniel": "ts-node documentation/daniel/test.ts"
   },
   "dependencies": {
-    "eslint": "^7.32.0"
+    "express": "^4.18.1",
+    "joi": "^17.6.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.7.4"
   }
 }
