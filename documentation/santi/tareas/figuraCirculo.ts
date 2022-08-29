@@ -1,4 +1,4 @@
-class CirculoSa {
+class Circulos {
   radio: number;
   constructor(radio: number) {
     this.radio = radio;
@@ -9,5 +9,5 @@ class CirculoSa {
   }
 }
 
-const circulosa = new CirculoSa(10);
-console.log(circulosa.area());
+const circulos = new Circulos(10);
+console.log(circulos.area());
