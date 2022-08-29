@@ -10,7 +10,11 @@ function rangoHasta(indice: number, num1: number = 0): Array<number> {
 console.log(rangoHasta(7));
 */
 
-/*rango(desde, hasta) -> lista de números: similar a rango, pero ahora se puede especificar el "desde". Ej: rango(5, 10) -> [5,6,7,8,9,10].
+import { number } from "joi";
+
+/*
+N2
+rango(desde, hasta) -> lista de números: similar a rango, pero ahora se puede especificar el "desde". Ej: rango(5, 10) -> [5,6,7,8,9,10].
 No hace falta validar que desde sea menor a hasta o tener rangos decrecientes.
 
 let arraynum: Array<number> = [];
@@ -27,10 +31,22 @@ function rangoHasta(
 console.log(rangoHasta(5, 15));
   */
 
-/*5. ordenar(numeros): Realizars una función que dada una lista de números retorne otra lista con los mismos números pero ordenados de menor a mayor.
-Pista:en una lista ordenada siempre se da que un elemento en la posición x es el mínimo de la sublista que sigue.
+/*
+Num3
+let IncrementNumbers: Array<number> = [];
 
-
+function Numbers(Num: number) {
+  SumNumber.push(Num);
+  if (IncrementNumbers.length < Num + IncrementNumbers.length) Numbers(Num - 1);
+  else {
+    let Sum: number = IncrementNumbers.reduce(
+      (count: number, number: number) => count + number,
+      0
+    );
+    console.log(IncrementNumbers + " = " + Sum);
+  }
+}
+Numbers(7);
 */
 
 /*
@@ -45,5 +61,6 @@ EliminarNumeros([3, 6, 7, 6, 8, 0, 0, 5]);
 */
 
 /*
+N5
 console.log([-80, 9, 100, -1, 50, -4].sort((a, b) => a - b));
 */
