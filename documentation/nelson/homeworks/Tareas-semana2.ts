@@ -1,14 +1,12 @@
-console.log("Archivo de Nelson");
+let rangoHastaNelson: Array<number> = [];
 
-let rangoHasta: Array<number> = [];
-
-function rango(num: number, desde: number = 0) {
-  rangoHasta.push(desde);
-  if (rangoHasta.length <= num) rango(num, desde + 1);
-  return rangoHasta;
+function rangoNelson(num: number, desde: number = 0) {
+  rangoHastaNelson.push(desde);
+  if (rangoHastaNelson.length <= num) rangoNelson(num, desde + 1);
+  return rangoHastaNelson;
 }
 
-console.log(rango(7));
+console.log(rangoNelson(7));
 
 // 2
 
@@ -20,7 +18,7 @@ function rangos(desde: number, hasta: number) {
   return arreglo;
 }
 
-console.log(rangos(8, 15));
+// console.log(rangos(8, 15));
 
 // 3
 
@@ -44,7 +42,7 @@ function borrarElemento(lista: Array<number>, elemento: number) {
   return console.log(listaFinal);
 }
 
-borrarElemento([1, 3, 2, 4, 2, 5, 1], 1);
+// borrarElemento([1, 3, 2, 4, 2, 5, 1], 1);
 
 //
 function ordenar(arreglo: Array<number>) {
@@ -55,4 +53,9 @@ function ordenar(arreglo: Array<number>) {
   );
 }
 
-ordenar([1, 0, -4, -8, 10, 15, 50, -50]);
+// ordenar([1, 0, -4, -8, 10, 15, 50, -50]);
+
+/**
+ * Retroalimentación
+ * 8/10 No se utilizo recursividad en los últimos dos
+ */
