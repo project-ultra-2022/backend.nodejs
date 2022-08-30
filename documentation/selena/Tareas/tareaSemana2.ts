@@ -25,23 +25,34 @@ function rango(
 console.log(rango(5, 15));
 
 /*
-console.log(rangoHasta(5, 15)); 3. sumaHasta(n) -> numero. Retorna la suma de los numeros desde el 0 hasta el N. Por ejemplo.
+3. sumaHasta(n) -> numero. Retorna la suma de los numeros desde el 0 hasta el N. Por ejemplo.
 Ejemplos:
 sumaHasta(2) 1 + 2 = 3
 sumaHasta(3) 1 + 2 + 3 = 6
 sumaHasta(5) = 5 + 4 + 3 + 2 + 1 + 0 => 15
 sumaHasta(10) 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 10 = 55
+let result: number = 0;
+function sumNum1(count: number, indice: number = 1): number {
+  result = result + indice;
+  if (count > indice) sumNum1(count, indice + 1);
+  return result;
+}
+
+console.log(sumNum1(5));
 
 4. removerTodos(lista, elemento): -> lista, Dada una lista y un elemento, retorna otra lista igual a la original, pero sin el "elemento" dado. En caso en que el elemento aparezca múltiples veces, lo remueve de todas.
-   Ejemplo:
-   remover([1,2,3,1,6,7,1,9,1], 1) -> [2,3,6,7,9]
-   remover([1,2,3,4,5], 1) -> [2,3,4,5]
-   remover([1,2,3,4,5], 3) -> [1,2,4,5]
-   remover([1,2,3,4,5,5,4,3,2,1], 3) -> [1,2,4,5,5,4,2,1]
+Ejemplo:
+remover([1,2,3,1,6,7,1,9,1], 1) -> [2,3,6,7,9]
+remover([1,2,3,4,5], 1) -> [2,3,4,5]
+remover([1,2,3,4,5], 3) -> [1,2,4,5]
+remover([1,2,3,4,5,5,4,3,2,1], 3) -> [1,2,4,5,5,4,2,1]
 
 5. ordenar(numeros): Realizar una función que dada una lista de números retorne otra lista con los mismos números pero ordenados de menor a mayor. Pista: en una lista ordenada siempre se da que un elemento en la posición x es el mínimo de la sublista que sigue.
-   Ejemplos:
-   ordenar([3,6,-1]) -> [-1,3,6]
-   ordenar([2,6,1,7]) -> [1,2,6,7]
-   ordenar([2,-1,6,1,7,-5]) -> [-5,-1,1,2,6,7]
+Ejemplos:
+ordenar([3,6,-1]) -> [-1,3,6]
+ordenar([2,6,1,7]) -> [1,2,6,7]
+ordenar([2,-1,6,1,7,-5]) -> [-5,-1,1,2,6,7]
+
+6. (OPCIONAL) Ver el siguiente material:
+https://www.youtube.com/watch?v=ZpY5KdGQvwI&t=3755s
 */
