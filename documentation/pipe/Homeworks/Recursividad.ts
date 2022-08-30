@@ -10,6 +10,8 @@ function rangoHasta(indice: number, num1: number = 0): Array<number> {
 console.log(rangoHasta(7));
 */
 
+import { number } from "joi";
+
 /*
 N2
 rango(desde, hasta) -> lista de números: similar a rango, pero ahora se puede especificar el "desde". Ej: rango(5, 10) -> [5,6,7,8,9,10].
@@ -28,6 +30,24 @@ function rangoHasta(
 
 console.log(rangoHasta(5, 15));
   */
+
+/*
+Num3
+let IncrementNumbers: Array<number> = [];
+
+function Numbers(Num: number) {
+  SumNumber.push(Num);
+  if (IncrementNumbers.length < Num + IncrementNumbers.length) Numbers(Num - 1);
+  else {
+    let Sum: number = IncrementNumbers.reduce(
+      (count: number, number: number) => count + number,
+      0
+    );
+    console.log(IncrementNumbers + " = " + Sum);
+  }
+}
+Numbers(7);
+*/
 
 /*
 N4
