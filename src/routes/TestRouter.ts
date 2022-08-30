@@ -3,12 +3,12 @@ import TestController from "../controllers/TestController";
 import TestMiddleware from "../middlewares/TestMiddleware";
 
 export default class TestRouter {
-  private endPoint: string;
-  private middleware: TestMiddleware;
-  private controller: TestController;
+  private readonly endPoint: string;
+  private readonly middleware: TestMiddleware;
+  private readonly controller: TestController;
 
   constructor(app: Application) {
-    this.endPoint = `/hello-world`;
+    this.endPoint = "/hello-world";
     this.middleware = new TestMiddleware();
     this.controller = new TestController();
     app
