@@ -6,3 +6,8 @@ function OrdenarNumeros(Lista: Array<number>) {
   );
 }
 OrdenarNumeros([-98, -89, -65, 0, 8, 6, 4, 1]);
+
+/**
+ * Retroalimentación
+ * No utlizaste recursividad
+ */

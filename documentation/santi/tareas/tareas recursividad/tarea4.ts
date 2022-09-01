@@ -5,3 +5,8 @@ function RemoverNumeros(Lista: Array<number>) {
   console.log(ListaFinal);
 }
 RemoverNumeros([1, 2, 2, 9, 9, 0, 4, 4]);
+
+/**
+ * Retroalimentación
+ * No utlizaste recursividad
+ */
