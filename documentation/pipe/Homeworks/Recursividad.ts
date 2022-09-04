@@ -10,8 +10,6 @@ function rangoHasta(indice: number, num1: number = 0): Array<number> {
 console.log(rangoHasta(7));
 */
 
-import { number } from "joi";
-
 /*
 N2
 rango(desde, hasta) -> lista de números: similar a rango, pero ahora se puede especificar el "desde". Ej: rango(5, 10) -> [5,6,7,8,9,10].
