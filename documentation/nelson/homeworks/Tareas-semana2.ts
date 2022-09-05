@@ -10,26 +10,30 @@ console.log(rangoNelson(7));
 
 // 2
 
-let arreglo: Array<number> = [];
+let arregloDesdeHasta: Array<number> = [];
 
 function rangos(desde: number, hasta: number) {
-  arreglo.push(desde);
-  if (arreglo.length < hasta - desde + arreglo.length) rangos(desde + 1, hasta);
-  return arreglo;
+  arregloDesdeHasta.push(desde);
+  if (arregloDesdeHasta.length < hasta - desde + arregloDesdeHasta.length)
+    rangos(desde + 1, hasta);
+  return arregloDesdeHasta;
 }
 
 // console.log(rangos(8, 15));
 
 // 3
 
-let lista: Array<number> = [];
+let listaSumas: Array<number> = [];
 
 function suma(num: number) {
-  lista.push(num);
-  if (lista.length < num + lista.length) suma(num - 1);
+  listaSumas.push(num);
+  if (listaSumas.length < num + listaSumas.length) suma(num - 1);
   else {
-    let total: number = lista.reduce((contador, item) => contador + item, 0);
-    console.log(lista, " la suma del arreglo es: ", total);
+    let total: number = listaSumas.reduce(
+      (contador, item) => contador + item,
+      0
+    );
+    console.log(listaSumas, " la suma del arreglo es: ", total);
   }
 }
 
