@@ -86,19 +86,15 @@ let newArraySort: Array<number> = [];
 
 function sortElements(
   elements: Array<number>,
-  index1: number = 0,
-  index2: number = index1 + 1
+  sizeElements: number = elements.length
 ): Array<number> {
-  if (elements[index1] < elements[index2]) {
-    newArraySort.push(elements[index1]);
-    sortElements(elements, index + 1);
-  } else {
-    newArraySort[index + 1];
-  }
-
+  let min = Math.min(...elements);
+  newArraySort.push(min);
+  elements.splice(elements.indexOf(min), 1);
+  if (newArraySort.length < sizeElements) sortElements(elements, sizeElements);
   return newArraySort;
 }
 
-console.log(sortElements([3, 6, -1])); // [-1,3,6]
-console.log(sortElements([2, 6, 1, 7])); // [1,2,6,7]
-console.log(sortElements([2, -1, 6, 1, 7, -5])); // [-5,-1,1,2,6,7]
+//console.log(sortElements([3, 6, -1])); // [-1,3,6]
+//console.log(sortElements([2, 6, 1, 7])); // [1,2,6,7]
+//console.log(sortElements([2, -1, 6, 1, 7, -5])); // [-5,-1,1,2,6,7]
