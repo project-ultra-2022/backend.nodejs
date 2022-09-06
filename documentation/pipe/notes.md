@@ -174,3 +174,8 @@ En estas reuniones se hacen las siguientes preguntas: Que estamos haciendo mal, 
 
 Backlog:
 Espacio en donde se almacenan todas las tareas.
+
+# prueba
+
+console.log(numero.slice(4));
+console.log(numero.search("-"));
