@@ -65,11 +65,36 @@ function getCousinNumbers(amount: number, myNumber: number = 1): Array<number> {
 */
 
 // rangoHasta(n) -> Lista de números: dado un número "n", retorna la lista de números desde el 0 hasta el N incluído. Por ejemplo: rangoHasta(7) -> [0,1,2,3,4,5,6,7]
-let response: Array<number> = [];
-function getRangoHasta(num: number, indice: number = 0): Array<number> {
-  response.push(indice);
-  if (num >= indice) getRangoHasta(num, indice + 1);
-  return response;
+
+let newArrayDeleteElements: Array<number> = [];
+function deleteElements(
+  elements: Array<number>,
+  index: number,
+  count: number = 0
+): Array<number> {
+  if (elements[count] != index) newArrayDeleteElements.push(elements[count]);
+  if (elements.length - 1 > count) deleteElements(elements, index, count + 1);
+  return newArrayDeleteElements;
 }
 
-console.log(getRangoHasta(15));
+//console.log(deleteElements([1, 2, 3, 1, 6, 7, 1, 9, 1], 1)); // [ 2, 3, 6, 7, 9 ]
+//console.log(deleteElements([1, 2, 3, 4, 5], 1)); // [2,3,4,5]
+//console.log(deleteElements([1, 2, 3, 4, 5], 3)); // [1,2,4,5]
+//console.log(deleteElements([1, 2, 3, 4, 5, 5, 4, 3, 2, 1], 3)); // [1,2,4,5,5,4,2,1]
+
+let newArraySort: Array<number> = [];
+
+function sortElements(
+  elements: Array<number>,
+  sizeElements: number = elements.length
+): Array<number> {
+  let min = Math.min(...elements);
+  newArraySort.push(min);
+  elements.splice(elements.indexOf(min), 1);
+  if (newArraySort.length < sizeElements) sortElements(elements, sizeElements);
+  return newArraySort;
+}
+
+//console.log(sortElements([3, 6, -1])); // [-1,3,6]
+//console.log(sortElements([2, 6, 1, 7])); // [1,2,6,7]
+//console.log(sortElements([2, -1, 6, 1, 7, -5])); // [-5,-1,1,2,6,7]
