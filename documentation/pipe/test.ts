@@ -1,7 +1,9 @@
-function EliminarNumeros(Numeros: Array<number>) {
-  let NuevaLista: Array<number> = Numeros.filter((item, indice) => {
-    return Numeros.indexOf(item) === indice;
-  });
-  console.log(NuevaLista);
-}
-EliminarNumeros([3, 6, 7, 6, 8, 0, 0, 5]);
+let Fechas: Array<string> = [
+  "2020/02/15",
+  "2022/05/19",
+  "2022/12/18",
+  "2000/12/15",
+  "1980/04/05",
+  "1965/02/15",
+  "1854/08/25",
+];
