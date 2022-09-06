@@ -5,7 +5,7 @@ Haga que la función FindIntersection(strArr) lea el array de cadenas almacenada
 El primer elemento representará una lista de números separados por un guión (-)
 El segundo elemento representará una segunda lista de números separados por un guión (-)
 
-Su objetivo es devolver un array de una posición (string) separada por comas que contenga los números que aparecen en los elementos de strArr
+Su objetivo es devolver un array de una posición (string) separada por guiones (-) que contenga los números que aparecen en los elementos de strArr
 Si no hay intersección, devuelve un array con una cadena vacia: ['']
 
 Ejemplos:
