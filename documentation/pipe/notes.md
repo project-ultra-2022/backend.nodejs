@@ -161,7 +161,7 @@ Reunion de planificacion:
 Planning meeting en ingles puede durar de dos a tres horas para ser agiles y va a participar un equipo.
 
 Reunion de revision:
-Es una reunion el cual esta reunido el cliente, el scrum team y el scrum master para revisar el proyectoy seria la primera version del software final, puede durar de tres a cuatro horas.
+Es una reunion en la cual esta reunido el cliente, el scrum team y el scrum master para revisar el proyectoy seria la primera version del software final, puede durar de tres a cuatro horas.
 
 Daily meeting o Reunion diaria:
 Reuniones diarias para hacer tres preguntas que hizo ayer, que hizo hoy, y que problemas tiene , la primera pregunta que tiene que hacer el scrum master es que problemas tiene, la reunion diaria sirve para ponerse de acuerdo en errores que tenga el equipo y tambien solo puede durar menos de 12 minutos y siempre es de pie.
