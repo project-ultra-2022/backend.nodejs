@@ -98,3 +98,42 @@ function sortElements(
 //console.log(sortElements([3, 6, -1])); // [-1,3,6]
 //console.log(sortElements([2, 6, 1, 7])); // [1,2,6,7]
 //console.log(sortElements([2, -1, 6, 1, 7, -5])); // [-5,-1,1,2,6,7]
+
+let phones: Array<string> = [
+  "+57-7333333",
+  "3108719976",
+  "+52-7123789",
+  "+1-3108714564",
+  "3507192591",
+  "+57-3777777",
+];
+
+/*
+console.log(
+  phones.map((p) => {
+    return p.includes("-") ? p.slice(p.search("-") + 1) : p;
+  })
+);
+*/
+
+let students: Array<string> = [
+  "santiago",
+  "pipe",
+  "esteban",
+  "selena",
+  "nelson",
+  "daniel",
+];
+
+/*
+console.log(
+  students.map((s) => {
+    s.split("").forEach((e, i) => {
+      if (["a", "e", "i", "o", "u"].find((v) => v == e)) {
+        s = s.replace(s[i], s[i].toUpperCase());
+      }
+    });
+    return s;
+  })
+);
+*/
