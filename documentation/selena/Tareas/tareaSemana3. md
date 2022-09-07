@@ -1,0 +1,31 @@
+//## Ejercicios - Semana 3
+
+//1. Dado el siguiente array
+
+//let Telefonos: Array<string> = [
+//'+57-7333333',
+////'3108719976',
+//'+52-7123789',
+//'+1-3108714564',
+//'3507192591',
+//'+57-3777777'
+//];
+
+// Quitar el indicativo de los teléfonos que lo tengan, devolver un array con todos los números corregidos
+let phones: Array<string> = [
+  "+57-7333333",
+  "3108719976",
+  "+52-7123789",
+  "+1-3108714564",
+  "3507192591",
+  "+57-3777777",
+];
+let newPhones: Array<string> = [];
+
+phones.forEach((element) => {
+  newPhones.push(
+    element.includes("-") ? element.slice(element.search("-") + 1) : element
+  );
+});
+
+console.log(newPhones);
