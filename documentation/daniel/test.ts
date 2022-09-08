@@ -137,3 +137,21 @@ console.log(
   })
 );
 */
+
+function findIntersectionDaniel(strArr: Array<string>): Array<string> {
+  let one = strArr[0].split("-");
+  let two = strArr[1].split("-");
+  return [one.filter((o) => o == two.find((t) => t == o)).join("-")];
+}
+
+[
+  [["1-3-4-7-13", "1-2-4-13-15"], ["1-4-13"]],
+  [["1-3-9-10-17-18", "1-4-9-10"], ["1-9-10"]],
+  [["1,2,3", "4,5,6"], [""]],
+].forEach((test, i) => {
+  console.log(
+    findIntersectionDaniel(test[0])[0] == test[1][0]
+      ? i + 1 + ") Funciono"
+      : i + 1 + ") Fallo"
+  );
+});
