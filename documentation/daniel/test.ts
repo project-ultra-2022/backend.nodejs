@@ -1,3 +1,4 @@
+/*
 console.log("Archivo de Daniel Valencia");
 
 function recursiveLoop(end: number): boolean {
@@ -40,7 +41,6 @@ function getCousinNumbers(amount: number, myNumber: number = 1): Array<number> {
 
 // console.log(getCousinNumbers(100));
 
-/*
 2	3	5	7	11	13	17	19
 23	29	31	37	41	43	47	53
 59	61	67	71	73	79	83	89
@@ -62,7 +62,6 @@ function getCousinNumbers(amount: number, myNumber: number = 1): Array<number> {
 829	839	853	857	859	863	877	881
 883	887	907	911	919	929	937	941
 947	953	967	971	977	983	991	997
-*/
 
 // rangoHasta(n) -> Lista de números: dado un número "n", retorna la lista de números desde el 0 hasta el N incluído. Por ejemplo: rangoHasta(7) -> [0,1,2,3,4,5,6,7]
 
@@ -108,13 +107,11 @@ let phones: Array<string> = [
   "+57-3777777",
 ];
 
-/*
 console.log(
   phones.map((p) => {
     return p.includes("-") ? p.slice(p.search("-") + 1) : p;
   })
 );
-*/
 
 let students: Array<string> = [
   "santiago",
@@ -124,7 +121,6 @@ let students: Array<string> = [
   "nelson",
   "daniel",
 ];
-
 
 console.log(
   students.map((s) => {
@@ -136,7 +132,6 @@ console.log(
     return s;
   })
 );
-*/
 
 function findIntersectionDaniel(strArr: Array<string>): Array<string> {
   let one = strArr[0].split("-");
@@ -155,3 +150,58 @@ function findIntersectionDaniel(strArr: Array<string>): Array<string> {
       : i + 1 + ") Fallo"
   );
 });
+
+// Clase Jueves 8 Sept
+
+let stringExample: string = "1,2,34,6,7";
+let example: Array<number> = [1, 2, 34, 6, 7];
+
+for (let posicion = 0; posicion < example.length; posicion++) {
+  let examplePequeño = example[posicion];
+  console.log(
+    "Mi example pequeño es: " +
+      examplePequeño +
+      " y la posición es: " +
+      posicion
+  );
+}
+
+example.forEach(function (examplePequeño: number, posicion: number) {
+  console.log(
+    "Mi example pequeño es: " +
+      examplePequeño +
+      " y la posición es: " +
+      posicion
+  );
+});
+
+example.forEach((examplePequeño: number, posicion: number) => {
+  console.log(
+    "Mi example pequeño es: " +
+      examplePequeño +
+      " y la posición es: " +
+      posicion
+  );
+});
+
+// stringExample.split(",").forEach((str) => console.log("El valor es: " + str));
+
+for (let index = 0; index < example1.length; index++) {
+  for (let index2 = 0; index2 < example2.length; index2++) {
+    if (example1[index] == example2[index2]) {
+      arrExample.push(example1[index]);
+    }
+  }
+}
+
+example1.forEach((element1) => {
+  example2.forEach((element2) => {
+    if (element1 == element2) arrExample.push(element1);
+  });
+});
+
+*/
+let e1: Array<number> = [1, 2, 34, 6, 7];
+let e2: Array<number> = [1, 4, 34, 8, 10];
+
+console.log(e1.filter((e) => e2.find((u) => u == e)));
