@@ -125,12 +125,12 @@ let students: Array<string> = [
   "daniel",
 ];
 
-/*
+
 console.log(
   students.map((s) => {
-    s.split("").forEach((e, i) => {
-      if (["a", "e", "i", "o", "u"].find((v) => v == e)) {
-        s = s.replace(s[i], s[i].toUpperCase());
+    s.split("").forEach((letra) => {
+      if (["a", "e", "i", "o", "u"].find((v) => v == letra)) {
+        s = s.replace(letra, letra.toUpperCase());
       }
     });
     return s;

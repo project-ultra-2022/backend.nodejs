@@ -1,18 +1,6 @@
 //## Ejercicios - Semana 3
-
-//1. Dado el siguiente array
-
-//let Telefonos: Array<string> = [
-//'+57-7333333',
-////'3108719976',
-//'+52-7123789',
-//'+1-3108714564',
-//'3507192591',
-//'+57-3777777'
-//];
-
 // Quitar el indicativo de los teléfonos que lo tengan, devolver un array con todos los números corregidos
-let phones: Array<string> = [
+let phonesSelena: Array<string> = [
   "+57-7333333",
   "3108719976",
   "+52-7123789",
@@ -20,12 +8,75 @@ let phones: Array<string> = [
   "3507192591",
   "+57-3777777",
 ];
-let newPhones: Array<string> = [];
+let newPhonesSelena: Array<string> = [];
 
-phones.forEach((element) => {
-  newPhones.push(
+phonesSelena.forEach((element) => {
+  newPhonesSelena.push(
     element.includes("-") ? element.slice(element.search("-") + 1) : element
   );
 });
 
-console.log(newPhones);
+console.log(newPhonesSelena);
+//Convertir las vocales en mayúscula, devolver array con todos los nombres corregidos
+let StudentsSelena: Array<string> = [
+  "Santiago",
+  "Pipe",
+  "Esteban",
+  "Selena",
+  "Nelson",
+  "Daniel",
+];
+let newStudentsSelena: Array<string> = [];
+
+StudentsSelena.forEach((element) => {
+  element.split("").forEach((letra) => {
+    if (
+      letra == "a" ||
+      letra == "e" ||
+      letra == "i" ||
+      letra == "o" ||
+      letra == "u"
+    ) {
+      element = element.replace(letra, letra.toUpperCase());
+    }
+  });
+  newStudentsSelena.push(element);
+});
+
+console.log(newStudentsSelena);
+
+//### Convertir las fechas en este formato: Día - Mes en letras año
+//### "1854/08/25" -> "25 - Agosto 1854"
+let FechasSelena: Array<string> = [
+  "2020/02/15",
+  "2022/05/19",
+  "2022/12/18",
+  "2000/12/15",
+  "1980/04/05",
+  "1965/02/15",
+  "1854/08/25",
+];
+let newFechasSelena: Array<string> = [];
+let nombresDeMeses: Array<string> = [
+  "enero",
+  "febrero",
+  "marzo",
+  "abril",
+  "mayo",
+  "junio",
+  "julio",
+  "agosto",
+  "septiembre",
+  "octubre",
+  "noviembre",
+  "diciembre",
+];
+FechasSelena.forEach((element) => {
+  let year: string = element.slice(0, 4);
+  let mounth: any = element.slice(5, 7);
+  let day: string = element.slice(8, 10);
+  let fechaCompleta =
+    day + "-" + nombresDeMeses[Math.abs(mounth) - 1] + " " + year;
+  newFechasSelena.push(fechaCompleta);
+});
+console.log(newFechasSelena);
