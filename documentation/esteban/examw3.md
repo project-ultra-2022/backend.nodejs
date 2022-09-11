@@ -37,3 +37,9 @@
 
 La ruta es una URL con la cual se puede saber qué está solicitando el usuario.
 El controlador se encarga de solucionar el problema mediante lógica pesada, interacción con bases de datos, otras API'S, SOAP.
+
+/**
+ Retroalimentación:
+
+ */
+Business File: Lógica pesado

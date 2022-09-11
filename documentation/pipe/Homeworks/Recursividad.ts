@@ -51,7 +51,7 @@ Numbers(7);
 N4
 function EliminarNumeros(Numeros: Array<number>) {
   let NuevaLista: Array<number> = Numeros.filter((item, indice) => {
-    return Numeros.indexOf(item) === indice;
+    return Numeros(item) === indice;
   });
   console.log(NuevaLista);
 }
