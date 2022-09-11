@@ -200,8 +200,8 @@ example1.forEach((element1) => {
   });
 });
 
-*/
 let e1: Array<number> = [1, 2, 34, 6, 7];
 let e2: Array<number> = [1, 4, 34, 8, 10];
 
 console.log(e1.filter((e) => e2.find((u) => u == e)));
+*/

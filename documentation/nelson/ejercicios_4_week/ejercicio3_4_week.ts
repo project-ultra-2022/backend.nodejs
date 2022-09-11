@@ -10,8 +10,7 @@ function findIntersectionNelson(strArr: Array<string>): Array<string> {
       }
     }
   }
-  console.log(arrayInterseccion);
-  return arrayInterseccion;
+  return [arrayInterseccion.join("-")];
 }
 
 // No modificar, es solo para comprobar que el código funciona
