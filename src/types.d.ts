@@ -6,4 +6,18 @@ export interface ApiResponse<T> {
   data?: T;
 }
 
+export type Student =
+  | "Daniel"
+  | "Selena"
+  | "Esteban"
+  | "Pipe"
+  | "Santi"
+  | "Nelson";
+
+export interface CodeClasses {
+  schedule: string;
+  teacher: Student;
+  subject: string;
+}
+
 // export type ErrorResponse<T> = Omit<SuccessResponse, 'data'>
