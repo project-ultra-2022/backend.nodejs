@@ -145,3 +145,11 @@ En estas reuniones se hacen las siguientes preguntas: Que estamos haciendo mal, 
 
 Backlog:
 Espacio en donde se almacenan todas las tareas.
+
+# Status de la API:
+
+Respuestas informativas (100–199),
+Respuestas satisfactorias (200–299),
+Redirecciones (300–399),
+Errores de los clientes (400–499),
+y errores de los servidores (500–599).

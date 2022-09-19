@@ -1,5 +1,5 @@
-import TestInput from "../inputObjets/TestInput";
-import TestOutput from "../outputObjets/TestOutput";
+import TestInput from "../inputObjects/TestInput";
+import TestOutput from "../outputObjects/TestOutput";
 
 export default class TestBusiness {
   private readonly data: TestInput;
