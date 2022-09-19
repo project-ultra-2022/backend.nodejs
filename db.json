@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "posts": [
     [
       null
@@ -7,5 +8,11 @@
   "comments": [],
   "profile": {
     "name ": "administrador"
+=======
+  "posts": [],
+  "comments": [],
+  "profile": {
+    "name": "admin"
+>>>>>>> 7f82bfa1503f746c1c10c0e9ab711db47e51ce60
   }
 }

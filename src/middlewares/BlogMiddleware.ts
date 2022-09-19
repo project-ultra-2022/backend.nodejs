@@ -5,7 +5,11 @@ import { ApiResponse } from "../types";
 export default class BlogMiddleware {
   private readonly schema: Schema;
   private readonly REGEX_STRING: RegExp =
+<<<<<<< HEAD
     /^[a-zA-ZÀ-ÿ\u00f1\u00d1]+(\s*[a-zA-ZÀ-ÿ\u00f1\u00d1])[a-zA-ZÀ-ÿ\u00f1\u00d1]+$/;
+=======
+    /^[a-zA-ZÀ-ÿ\u00f1\u00d1]+(\s*[a-zA-ZÀ-ÿ\u00f1\u00d1]*)*[a-zA-ZÀ-ÿ\u00f1\u00d1]+$/;
+>>>>>>> 7f82bfa1503f746c1c10c0e9ab711db47e51ce60
 
   constructor() {
     this.schema = Joi.object()
@@ -37,11 +41,19 @@ export default class BlogMiddleware {
           .min(1)
           .max(5)
           .label(
+<<<<<<< HEAD
             "The field 'score' is required,between 1 to 5 and only allows numbers"
+=======
+            "The field 'score' is required, between 1 to 5 and only allows numbers"
+>>>>>>> 7f82bfa1503f746c1c10c0e9ab711db47e51ce60
           ),
       })
       .required();
   }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 7f82bfa1503f746c1c10c0e9ab711db47e51ce60
   public validate(req: Request, res: Response, next: NextFunction): any {
     const { error } = this.schema.validate(req.body, { abortEarly: false });
     if (error != null) {
