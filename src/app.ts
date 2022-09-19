@@ -1,6 +1,7 @@
-// Se importa el servidor local Express
-import express from "express";
+import express from "express"; // Se importa el servidor local Express
 import TestRouter from "./routes/TestRouter";
+import BlogRouter from "./routes/BlogRouter";
+import PlayersRouter from "./routes/PlayerRouter";
 
 const app = express();
 
@@ -18,7 +19,9 @@ app.use((_req: any, res: any, next: any) => {
 
 app.use(express.json()); // Middleware que transforma el req.body en json
 
+new PlayersRouter(app);
 new TestRouter(app);
+new BlogRouter(app);
 
 app.get("/ping", (_, res) => {
   res.send("ping");
