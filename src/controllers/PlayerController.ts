@@ -1,19 +1,19 @@
 import { Request, Response } from "express";
-import TestOutput from "../outputObjects/TestOutput";
-import TestBusiness from "../business/TestBusiness";
+import PlayerBusiness from "../business/PlayerBusiness";
+import PlayerOutput from "../outputObjects/PlayerOutput";
 import { ApiResponse } from "../types";
 
-export default class TestController {
+export default class PlayerController {
   public async create(
     req: Request,
     res: Response
   ): Promise<Response<any, Record<string, any>>> {
-    const response: ApiResponse<TestOutput> = {
+    const response: ApiResponse<PlayerOutput> = {
       statusCode: 200,
-      message: "Request successful",
+      message: "Request Successful",
     };
     try {
-      response.data = await new TestBusiness(req.body).create();
+      response.data = await new PlayerBusiness(req.body).create();
     } catch (error: any) {
       response.statusCode = 500;
       response.message = error;
