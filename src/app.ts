@@ -1,5 +1,4 @@
-// Se importa el servidor local Express
-import express from "express";
+import express from "express"; // Se importa el servidor local Express
 import TestRouter from "./routes/TestRouter";
 import BlogRouter from "./routes/BlogRouter";
 import PlayerRouter from "./routes/PlayerRouter";
@@ -26,12 +25,19 @@ new TestRouter(app);
 new BlogRouter(app);
 new LoginRouter(app);
 
-app.get("/ping", (_, res) => {
-  res.send("ping");
+app.get("/whatismyname", (_req, res) => {
+  let myName = "Daniel Valencia";
+  res.send(myName);
+});
+
+app.get("/mySum", (_req, res) => {
+  //req.query
+  let response: any = "Hola mundo";
+  res.send("La respuesta: " + response);
 });
 
 // Asignamos un puerto para iniciar el servidor local
 const PORT = 3001;
 app.listen(PORT, () => {
-  console.log("Server running");
+  console.log("Server running " + PORT);
 });
