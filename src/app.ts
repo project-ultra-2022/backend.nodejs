@@ -1,6 +1,8 @@
 import express from "express"; // Se importa el servidor local Express
 import TestRouter from "./routes/TestRouter";
 import BlogRouter from "./routes/BlogRouter";
+import PlayerRouter from "./routes/PlayerRouter";
+import LoginRouter from "./routes/Loginrouter";
 
 const app = express();
 
@@ -18,8 +20,10 @@ app.use((_req: any, res: any, next: any) => {
 
 app.use(express.json()); // Middleware que transforma el req.body en json
 
-new BlogRouter(app);
+new PlayerRouter(app);
 new TestRouter(app);
+new BlogRouter(app);
+new LoginRouter(app);
 
 app.get("/whatismyname", (_req, res) => {
   let myName = "Daniel Valencia";

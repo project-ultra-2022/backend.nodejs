@@ -1,18 +1,19 @@
+import { string } from "joi";
+
 export type StatusCode = 200 | 400 | 500;
+export type Student =
+  | "Selena"
+  | "Santiago"
+  | "Pipe"
+  | "Esteban"
+  | "Nelson"
+  | "Daniel";
 
 export interface ApiResponse<T> {
   statusCode: StatusCode;
   message: string;
   data?: T;
 }
-
-export type Student =
-  | "Daniel"
-  | "Selena"
-  | "Esteban"
-  | "Pipe"
-  | "Santi"
-  | "Nelson";
 
 export interface CodeClasses {
   schedule: string;
@@ -21,3 +22,5 @@ export interface CodeClasses {
 }
 
 // export type ErrorResponse<T> = Omit<SuccessResponse, 'data'>
+
+export type Player = "Neymar" | "Cristiano" | "Messi";
