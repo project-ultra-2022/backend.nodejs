@@ -1,0 +1,106 @@
+<mxfile host="65bd71144e">
+    <diagram id="LDMWREldx_whx4n_vvC_" name="Página-1">
+        <mxGraphModel dx="743" dy="272" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="Security" style="html=1;strokeColor=none;fillColor=#0079D6;labelPosition=center;verticalLabelPosition=middle;verticalAlign=top;align=center;fontSize=12;outlineConnect=0;spacingTop=-6;fontColor=#FFFFFF;sketch=0;shape=mxgraph.sitemap.security;" parent="1" vertex="1">
+                    <mxGeometry x="600" y="430" width="102.86" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="" style="aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image;image=img/lib/active_directory/security.svg;" parent="1" vertex="1">
+                    <mxGeometry x="722.5" y="430" width="37.8" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="" style="sketch=0;points=[[0,0,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0,0],[0,1,0],[0.25,1,0],[0.5,1,0],[0.75,1,0],[1,1,0],[0,0.25,0],[0,0.5,0],[0,0.75,0],[1,0.25,0],[1,0.5,0],[1,0.75,0]];outlineConnect=0;fontColor=#232F3E;gradientColor=#F54749;gradientDirection=north;fillColor=#C7131F;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.identity_and_access_management;" parent="1" vertex="1">
+                    <mxGeometry x="600" y="240" width="80" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#BF0816;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.data_encryption_key;" parent="1" vertex="1">
+                    <mxGeometry x="635.07" y="40" width="87.43" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="" style="verticalLabelPosition=bottom;html=1;verticalAlign=top;align=center;strokeColor=none;fillColor=#00BEF2;shape=mxgraph.azure.scheduler;pointerEvents=1;" parent="1" vertex="1">
+                    <mxGeometry x="690" y="240" width="64" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="&lt;h1&gt;Encriptación&lt;/h1&gt;&lt;p&gt;La encriptación es un método de codificación de datos (mensajes o archivos) de modo que solo las partes autorizadas puedan leer la información o acceder a ella. La encriptación utiliza algoritmos complejos para codificar la información que se envía. Una vez recibida, la información se puede descifrar con la clave proporcionada por el emisor del mensaje. La eficacia de la tecnología de encriptación está determinada por la fuerza del algoritmo, la longitud de la clave y la idoneidad del sistema de encriptación seleccionado.&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="40" width="500" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="&lt;h1&gt;Token por JWT&lt;/h1&gt;&lt;p&gt;JSON Web Token es un estándar de Internet propuesto para crear datos con firma opcional y/o encriptación opcional cuya carga útil contiene JSON que afirma una cierta cantidad de reclamos. Los tokens se firman mediante un secreto privado o una clave pública/privada..&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="240" width="490" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="&lt;h1&gt;Bases de datos&lt;/h1&gt;&lt;p&gt;La base de datos puede guardar el registro de autenticación del usuario, cuando el usuario quierea consumir un registro, se revisa en la base de datos y se corrobora que el usuario tenga una sesión activa menor al tiempo que se le asigno, por ejemplo 8 horas&lt;/p&gt;&lt;p&gt;Esta alternativa también nos permite borrar su sesión cuando el usuario haga el logout&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="400" width="490" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="700" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="Se guarda en la DB" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="50" y="710" width="100" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="" style="shape=flexArrow;endArrow=classic;html=1;" parent="1" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="110" y="989.5" as="sourcePoint"/>
+                        <mxPoint x="180" y="989.5" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="16" value="id del user, payload, fecha y hora de session" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="770" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" value="" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="480" y="700" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" value="JWT introducimos El Id encriptado" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="490" y="715" width="100" height="35" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" value="" style="aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image;image=img/lib/active_directory/laptop_client.svg;" parent="1" vertex="1">
+                    <mxGeometry x="286.63" y="606.25" width="29.25" height="32.5" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" value="" style="aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image;image=img/lib/active_directory/workstation_client.svg;" parent="1" vertex="1">
+                    <mxGeometry x="220" y="965" width="42.5" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="22" value="" style="aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image;image=img/lib/active_directory/laptop_client.svg;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="965" width="45" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="23" value="JWT sea valido en tiempo y saca el ID encriptado" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="336.25" y="1050" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="24" value="Solo con ese ID, se puede utilizar la DB: valido" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="336.25" y="1210" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="25" value="" style="shape=flexArrow;endArrow=classic;html=1;" parent="1" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="510.0000000000001" y="989.5" as="sourcePoint"/>
+                        <mxPoint x="580.0000000000001" y="989.5" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="26" value="Encriptar ID" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="256.25" y="700" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="27" value="" style="shape=flexArrow;endArrow=classic;html=1;" parent="1" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="190.0000000000001" y="729.94" as="sourcePoint"/>
+                        <mxPoint x="238.60000000000002" y="729.5" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="28" value="Servicio super valiosos" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="622" y="960" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="29" value="Saca el ID y lo desencripta" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="336.25" y="1130" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="30" value="&lt;h1&gt;Login -&amp;gt; session&lt;/h1&gt;&lt;p&gt;Explicación de sistema de autenticación&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="40" y="585" width="240" height="75" as="geometry"/>
+                </mxCell>
+                <mxCell id="31" value="" style="shape=flexArrow;endArrow=classic;html=1;" edge="1" parent="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="400.0000000000001" y="729.94" as="sourcePoint"/>
+                        <mxPoint x="448.6" y="729.5" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="32" value="&lt;h1&gt;session verificación&lt;/h1&gt;&lt;p&gt;Verificar si está logeado el usuario&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="40" y="860" width="240" height="75" as="geometry"/>
+                </mxCell>
+                <mxCell id="33" value="Verifica que llegue el header de autenticación" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="337" y="965" width="120" height="60" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
